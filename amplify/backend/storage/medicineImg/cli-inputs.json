@@ -1,0 +1,14 @@
+{
+  "resourceName": "medicineImg",
+  "policyUUID": "3fcaaa5d",
+  "bucketName": "pharmapp7ada77518deb4722af7dc97d0c90f9b4",
+  "storageAccess": "auth",
+  "guestAccess": [],
+  "authAccess": [
+    "CREATE_AND_UPDATE",
+    "READ",
+    "DELETE"
+  ],
+  "triggerFunction": "NONE",
+  "groupAccess": {}
+}
