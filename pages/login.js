@@ -41,7 +41,7 @@ export default function LoginScreen() {
   return (
     <Layout title="Login">
       <form
-        className="mx-auto max-w-screen-md"
+        className="max-w-screen-md mx-auto"
         onSubmit={handleSubmit(submitHandler)}
       >
         <h1 className="mb-4 text-xl">Login</h1>
@@ -80,9 +80,15 @@ export default function LoginScreen() {
             <div className="text-red-500 ">{errors.password.message}</div>
           )}
         </div>
-        <div className="mb-4 ">
-          <button className="primary-button">Login</button>
+        <div className="flex mb-4">
+
+            <div> <button className="mr-4  primary-button">Login</button> </div>
+            <div> <button className="primary-button">Create with AWS </button></div>
+            
         </div>
+        
+          
+       
         <div className="mb-4 ">
           Don&apos;t have an account? &nbsp;
           <Link href={`/register?redirect=${redirect || '/'}`}>Register</Link>
