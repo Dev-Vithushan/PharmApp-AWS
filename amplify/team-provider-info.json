@@ -1,23 +1,15 @@
 {
   "dev": {
     "awscloudformation": {
-      "AuthRoleName": "amplify-pharmapp-dev-140156-authRole",
-      "UnauthRoleArn": "arn:aws:iam::302645416705:role/amplify-pharmapp-dev-140156-unauthRole",
-      "AuthRoleArn": "arn:aws:iam::302645416705:role/amplify-pharmapp-dev-140156-authRole",
+      "AuthRoleName": "amplify-pharmapp-dev-200820-authRole",
+      "UnauthRoleArn": "arn:aws:iam::302645416705:role/amplify-pharmapp-dev-200820-unauthRole",
+      "AuthRoleArn": "arn:aws:iam::302645416705:role/amplify-pharmapp-dev-200820-authRole",
       "Region": "ap-northeast-1",
-      "DeploymentBucketName": "amplify-pharmapp-dev-140156-deployment",
-      "UnauthRoleName": "amplify-pharmapp-dev-140156-unauthRole",
-      "StackName": "amplify-pharmapp-dev-140156",
-      "StackId": "arn:aws:cloudformation:ap-northeast-1:302645416705:stack/amplify-pharmapp-dev-140156/d64c81f0-5f3f-11ed-86fa-0a313e9dbcef",
-      "AmplifyAppId": "d2bjplo2rtdznv"
-    },
-    "categories": {
-      "auth": {
-        "pharmapp4c688320": {}
-      },
-      "function": {
-        "payment": {}
-      }
+      "DeploymentBucketName": "amplify-pharmapp-dev-200820-deployment",
+      "UnauthRoleName": "amplify-pharmapp-dev-200820-unauthRole",
+      "StackName": "amplify-pharmapp-dev-200820",
+      "StackId": "arn:aws:cloudformation:ap-northeast-1:302645416705:stack/amplify-pharmapp-dev-200820/2c8d37b0-603c-11ed-9327-0a802b27360d",
+      "AmplifyAppId": "d1tyh0i7ig4uya"
     }
   }
 }
