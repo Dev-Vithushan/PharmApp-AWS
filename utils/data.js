@@ -88,6 +88,18 @@ const data = {
       countInStock: 20,
       description: 'A popular pants',
     },
+    {
+      name: 'Fit Pants',
+      slug: 'fit-pants',
+      category: 'Pants',
+      image: '/images/pants2.jpg',
+      price: 95,
+      brand: 'Zara',
+      rating: 3.5,
+      numReviews: 7,
+      countInStock: 20,
+      description: 'A popular pants',
+    },
   ],
 };
 
