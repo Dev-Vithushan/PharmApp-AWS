@@ -3,8 +3,8 @@ import bcrypt from 'bcryptjs';
 const data = {
   users: [
     {
-      name: 'John',
-      email: 'admin@example.com',
+      name: 'Vithushan',
+      email: 'vithu@admin.com',
       password: bcrypt.hashSync('123456'),
       isAdmin: true,
     },
@@ -99,6 +99,18 @@ const data = {
       numReviews: 7,
       countInStock: 20,
       description: 'A popular pants',
+    },
+    {
+      name: 'Diloxide',
+      slug: 'Diloxide',
+      category: 'Medicine',
+      image: '/images/dilo.jpg',
+      price: 20,
+      brand: 'Autora',
+      rating: 4.5,
+      numReviews: 8,
+      countInStock: 20,
+      description: 'Only approved with prescription',
     },
   ],
 };

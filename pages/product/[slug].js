@@ -8,9 +8,13 @@ import Layout from '../../components/Layout';
 import Product from '../../models/Product';
 import db from '../../utils/db';
 import { Store } from '../../utils/Store';
+import data from '../../utils/data';
 
 export default function ProductScreen(props) {
-  const { product } = props;
+  const {query} = useRouter();
+  const {slug} = query;
+  const product = data.products.find((x) => x.slug === slug)
+  // const { product } = props;
   const { state, dispatch } = useContext(Store);
   const router = useRouter();
   if (!product) {
@@ -59,17 +63,17 @@ export default function ProductScreen(props) {
           </ul>
         </div>
         <div>
-          <div className="card p-5">
-            <div className="mb-2 flex justify-between">
+          <div className="p-5 card">
+            <div className="flex justify-between mb-2">
               <div>Price</div>
               <div>${product.price}</div>
             </div>
-            <div className="mb-2 flex justify-between">
+            <div className="flex justify-between mb-2">
               <div>Status</div>
               <div>{product.countInStock > 0 ? 'In stock' : 'Unavailable'}</div>
             </div>
             <button
-              className="primary-button w-full"
+              className="w-full primary-button"
               onClick={addToCartHandler}
             >
               Add to cart
