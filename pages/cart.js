@@ -77,10 +77,10 @@ function CartScreen() {
                         ))}
                       </select>
                     </td>
-                    <td className="p-5 text-right">${item.price}</td>
+                    <td className="p-5 text-right">Rs{item.price}</td>
                     <td className="p-5 text-center">
                       <button onClick={() => removeItemHandler(item)}>
-                        <XCircleIcon className="h-5 w-5"></XCircleIcon>
+                        <XCircleIcon className="w-5 h-5"></XCircleIcon>
                       </button>
                     </td>
                   </tr>
@@ -88,7 +88,7 @@ function CartScreen() {
               </tbody>
             </table>
           </div>
-          <div className="card p-5">
+          <div className="p-5 card">
             <ul>
               <li>
                 <div className="pb-3 text-xl">
@@ -99,7 +99,7 @@ function CartScreen() {
               <li>
                 <button
                   onClick={() => router.push('login?redirect=/shipping')}
-                  className="primary-button w-full"
+                  className="w-full primary-button"
                 >
                   Check Out
                 </button>

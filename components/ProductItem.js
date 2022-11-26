@@ -10,7 +10,7 @@ export default function ProductItem({ product, addToCartHandler }) {
           <img
             src={product.image}
             alt={product.name}
-            className="rounded shadow object-cover h-64 w-full"
+            className="object-cover w-full h-64 rounded shadow"
           />
         </a>
       </Link>
@@ -21,7 +21,7 @@ export default function ProductItem({ product, addToCartHandler }) {
           </a>
         </Link>
         <p className="mb-2">{product.brand}</p>
-        <p>${product.price}</p>
+        <p>Rs {" "}{product.price}</p>
         <button
           className="primary-button"
           type="button"

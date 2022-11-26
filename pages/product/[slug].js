@@ -30,7 +30,7 @@ export default function ProductScreen(props) {
       return toast.error('Sorry. Product is out of stock');
     }
 
-    dispatch({ type: 'CART_ADD_ITEM', payload: { ...product, quantity } });
+    dispatch({ type: 'CART_ADD_ITEM', payload: { ...product, quantity:1} });
     router.push('/cart');
   };
 
@@ -66,7 +66,7 @@ export default function ProductScreen(props) {
           <div className="p-5 card">
             <div className="flex justify-between mb-2">
               <div>Price</div>
-              <div>${product.price}</div>
+              <div>Rs {" "}{product.price}</div>
             </div>
             <div className="flex justify-between mb-2">
               <div>Status</div>

@@ -8,6 +8,7 @@ import { Menu } from '@headlessui/react';
 import 'react-toastify/dist/ReactToastify.css';
 import { Store } from '../utils/Store';
 import DropdownLink from './DropdownLink';
+import data from '../utils/data';
 
 export default function Layout({ title, children }) {
   const { status, data: session } = useSession();
@@ -46,7 +47,9 @@ export default function Layout({ title, children }) {
                   Cart
                   {cartItemsCount > 0 && (
                     <span className="px-2 py-1 ml-1 text-xs font-bold text-white bg-red-600 rounded-full">
-                      {cartItemsCount}
+                      
+                      {/* {cartItemsCount} */}
+                      {cart.cartItems.reduce((a,c)=> a+c.quantity,0)}
                     </span>
                   )}
                 </a>
@@ -104,7 +107,7 @@ export default function Layout({ title, children }) {
         </header>
         <main className="container px-4 m-auto mt-4">{children}</main>
         <footer className="flex items-center justify-center h-10 shadow-inner">
-          <p>Copyright © 2023 PharmApp</p>
+          <p>Copyright © 2022 PharmApp</p>
         </footer>
       </div>
     </>
